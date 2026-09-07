@@ -1,0 +1,3 @@
+/home/bxh/Downloads/cpp-jenkins-test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/home/bxh/Downloads/cpp-jenkins-test/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/home/bxh/Downloads/cpp-jenkins-test/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
