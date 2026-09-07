@@ -35,6 +35,8 @@ T MathTest<T>::sub(const T& a, const T& b)
 template<typename T>
 T MathTest<T>::div(const T& a, const T& b)
 {
+    if(b == 0)
+        throw std::runtime_error();
     return a / b;
 }
 
@@ -51,10 +53,10 @@ MathTest<T>::~MathTest() {}
 template<typename T>
 T MathTest<T>::pow(const int& p)
 {
-    return [&]() ->T {
-        T result = this->val;
+    return [&]() -> T {
+        T result = 1;
         for(int i=0; i<p; i++) 
-            result *= val;  
+            result *= this->val;  
         return result;
     }();
 }
