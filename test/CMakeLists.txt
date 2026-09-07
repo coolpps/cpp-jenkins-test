@@ -9,8 +9,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 
-add_executable(test_math test-cpp-jenkins.cpp)
-target_link_libraries(test_math
+add_executable(est-cpp-jenkins test-cpp-jenkins.cpp)
+target_link_libraries(est-cpp-jenkins
   gtest
   gtest_main
 )
@@ -18,4 +18,4 @@ target_link_libraries(test_math
 include(CTest)
 enable_testing()
 
-add_test(NAME MathTest COMMAND test_math)
+add_test(NAME MathTest COMMAND est-cpp-jenkins)
