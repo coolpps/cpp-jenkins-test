@@ -13,6 +13,7 @@ pipeline{
         stage("setup environment") {
             steps {
                 sh '''
+                    apt-get update
                     apt-get install -y cmake build-essential git
                 '''
             }
