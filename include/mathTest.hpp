@@ -41,7 +41,7 @@ T MathTest<T>::div(const T& a, const T& b)
 }
 
 template<typename T>
-MathTest<T>::MathTest() {}
+MathTest<T>::MathTest():val(0) {}
 
 template<typename T>
 MathTest<T>::MathTest(T input):val(input) {}
