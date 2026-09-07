@@ -35,9 +35,11 @@ pipeline{
 
         stage("test") {
             steps{
-                def executable_path = "${env.BUILD_DIR}/test/${env.TESTCASE_EXECUTABLE_NAME}"
-                sh "chmod +x ${executable_path}"
-                sh "${executable_path}"
+                script {
+                    def executable_path = "${env.BUILD_DIR}/test/${env.TESTCASE_EXECUTABLE_NAME}"
+                    sh "chmod +x ${executable_path}"
+                    sh "${executable_path}"
+                }
             }
         }
     }
