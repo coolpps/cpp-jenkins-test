@@ -51,8 +51,8 @@ pipeline{
         failure { echo "Pipeline failed!" }
         always
         {
-            echo "Pipeline finished."
-            cleanWs()
+            sh 'rm -rf build/*'   // 删除 build 下的所有文件和子目录，但 build 目录保留
+            echo "Build directory contents cleaned."
         }
     }
 
