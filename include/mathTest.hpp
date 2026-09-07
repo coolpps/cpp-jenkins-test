@@ -36,7 +36,7 @@ template<typename T>
 T MathTest<T>::div(const T& a, const T& b)
 {
     if(b == 0)
-        throw std::runtime_error();
+        throw std::runtime_error("div 0");
     return a / b;
 }
 
