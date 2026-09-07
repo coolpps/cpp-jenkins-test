@@ -1,1 +1,0 @@
-/usr/bin/c++  -O0 -g -g -Wl,--dependency-file=CMakeFiles/cpp_jenkins_test.dir/link.d "CMakeFiles/cpp_jenkins_test.dir/cpp-jenkins-test.cpp.o" -o cpp_jenkins_test
